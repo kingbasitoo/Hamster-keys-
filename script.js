@@ -347,11 +347,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('creatorChannelBtn').addEventListener('click', () => {
-        window.open('https://telegram.me/onlyxdaddy', '_blank');
+        window.open('https://www.facebook.com/Basitkhanfb', '_blank');
     });
 
     telegramChannelBtn.addEventListener('click', () => {
-        window.open('https://telegram.me/onlyxcoding', '_blank');
+        window.open('https://www.facebook.com/Basitkhanfb', '_blank');
     });
 
     document.getElementById('ShowKeysBtn').addEventListener('click', () => {
