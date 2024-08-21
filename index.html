@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Promo Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Game Promo Code Generator</h1>
+        <div class="form-group">
+            <label for="gameSelect">Select Game</label>
+            <select id="gameSelect">
+                <option value="1">Riding Extreme 3D</option>
+                <option value="2">Chain Cube 2048</option>
+                <option value="3">My Clone Army</option>
+                <option value="4">Train Miner</option>
+                <option value="5">MergeAway</option>
+                <option value="6">Twerk Race</option>
+                <option value="7">Polysphere [NEW]</option>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label id="keyCountLabel" for="keyCountSelect">Number of keys:</label>
+            <select id="keyCountSelect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="12">12</option>
+                
+            </select>
+        </div>
+        <button id="startBtn">Generate Keys</button>
+
+        <label>
+            <input type="checkbox" id="logCheckbox"> Enable Logs
+        </label>
+        <textarea id="logArea" rows="3" readonly style="width: 100%; resize: none; font-size: 12px; display: none;"></textarea>
+        
+        <div id="progressContainer" class="hidden">
+            <div class="progress-bar">
+                <div id="progressBar"></div>
+            </div>
+            <div id="progressText">0%</div>
+            <div id="progressLog">Starting...</div>
+            <div id="countdownContainer">
+            <p>Next Step will start in: <span id="countdownTimer"></span> seconds </p>
+            </div>
+        </div>
+        <div id="keyContainer" class="hidden">
+            <h3 id="generatedKeysTitle" class="hidden">Generated Keys:</h3>
+            <div id="keysList"></div>
+            <button id="copyAllBtn" class="hidden">Copy All Keys</button>
+            <div id="copyStatus" class="hidden">Copied!</div>
+            <button id="generateMoreBtn">Generate More Keys</button>
+        </div>
+        <div class="mycodes">
+            <p>
+                The Key Generation may take upto 10 mins<br>
+                If you feel its not working then <a href="https://telegram.me/onlyxcoding">Contact Creator</a>
+        </div>
+        <div class="footer">
+            <p>OWNER: This tool is for educational purposes | USE IT RESPONSIBLY
+            <button id="telegramChannelBtn">TELEGRAM CHANNEL👽</button></p>
+            <button id="creatorChannelBtn">DEVELOPER☠</button> 
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>s
