@@ -1,108 +1,124 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Promo Code Generator</title>
+
+    <title>Hamster Key Generator</title>
+
     <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3578431801773866"
      crossorigin="anonymous"></script>
+    
 </head>
+
 <body>
-
-
 
     <div class="container">
 
+        <h1>Hamster Key Generator</h1>
 
+        <div id="gameSelectContainer" class="grid-container">
 
-        <h1>Game Promo Code Generator</h1>
+          <div class="game-option" data-game="9">
 
-        <div class="form-group">
+            <img src="https://cdn.hamsterkombat.io/mud_racing/image.webp" alt="Polysphere">
 
-            <label for="gameSelect">Select Game</label>
+            <p>Mud Racing</p>
 
-            <select id="gameSelect">
+            </div>
 
-                <option value="1">Riding Extreme 3D</option>
+            <div class="game-option" data-game="8">
 
-                <option value="2">Chain Cube 2048</option>
+            <img src="https://cdn.hamsterkombat.io/mow_trim/image.webp" alt="Polysphere">
 
-                <option value="3">My Clone Army</option>
+            <p>Mow and Trim</p>
 
-                <option value="4">Train Miner</option>
+            </div>
 
-                <option value="5">MergeAway</option>
+            <div class="game-option" data-game="7">
 
-                <option value="6">Twerk Race </option>
+            <img src="https://cdn.hamsterkombat.io/polysphere/image.webp" alt="Polysphere">
 
-                <option value="7">Polysphere </option>
+            <p>Polysphere</p>
 
-                <option value="8">Mow and Trim[NEW]</option>
+            </div>
 
-                <option value="9">Mud Racing[NEW]</option>
+            <div class="game-option" data-game="6">
 
+                <img src="https://cdn.hamsterkombat.io/twerk/image.webp" alt="Twerk Race 3D">
 
+                <p>Twerk Race 3D</p>
 
-            </select>
+            </div>
 
-        </div>
+            <div class="game-option" data-game="5">
 
+                <img src="https://cdn.hamsterkombat.io/merge_away/image.webp" alt="Merge Away">
 
+                <p>Merge Away</p>
 
-        <div id="google_translate_element"></div>
+            </div>
 
-        <script type="text/javascript">
+            <div class="game-option" data-game="3">
 
-            function googleTranslateElementInit() {
+                <img src="https://cdn.hamsterkombat.io/my_clone_army/image.webp" alt="My Clone Army">
 
-                new google.translate.TranslateElement({
+                <p>My Clone Army</p>
 
-                    pageLanguage: 'en', 
+            </div>
 
-                    includedLanguages: 'en,hi,ta,ru,id,ha,pt,persian', 
+            <div class="game-option" data-game="2">
 
-                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                <img src="https://cdn.hamsterkombat.io/chain_cube/image.webp" alt="Chain Cube 2048">
 
-                }, 'google_translate_element');
+                <p>Chain Cube 2048</p>
 
-            }
+            </div>
 
-            
+            <div class="game-option" data-game="4">
 
-        </script>
+                <img src="https://cdn.hamsterkombat.io/train_miner/image.webp" alt="Train Miner">
 
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                <p>Train Miner</p>
 
-        
+            </div>
 
+            <div class="game-option" data-game="1">
 
+                <img src="https://cdn.hamsterkombat.io/bikeride/image.webp" alt="Bike Ride 3D">
 
-        
+                <p>Bike Ride 3D</p>
 
-        <div class="form-group">
-
-            <label id="keyCountLabel" for="keyCountSelect">Number of keys:</label>
-
-            <select id="keyCountSelect">
-
-                <option value="1">1</option>
-
-                <option value="2">2</option>
-
-                <option value="4">4</option>
-
-                <option value="12">12</option>
-
-                
-
-            </select>
+            </div>
 
         </div>
 
-        <button id="startBtn">Generate Keys</button>
 
-        
+
+        <div class="form-group hidden" id="keyCountGroup">
+
+            <label for="keyCountSelect">Select Number of Keys:</label>
+
+            <div id="keyCountSelect" class="key-slider">
+
+                <input type="range" min="1" max="12" value="1" id="keyRange">
+
+                <span id="keyValue">1</span>
+
+            </div>
+
+        </div>
+
+        <button id="startBtn" class="hidden">Generate Keys</button>
+
+
 
         <div id="progressContainer" class="hidden">
 
@@ -112,76 +128,52 @@
 
             </div>
 
-            <div id="progressText">0%</div>
+            <p id="progressText">0%</p>
 
-            <div id="progressLog">Starting...</div>
-
-            <div id="countdownContainer">
-
-            <p>Next Step will start in: <span id="countdownTimer"></span> seconds </p>
-
-            </div>
+            <p id="progressLog">Starting...</p>
 
         </div>
 
+
+
         <div id="keyContainer" class="hidden">
 
-            <h3 id="generatedKeysTitle" class="hidden">Generated Keys:</h3>
+            <h2 id="generatedKeysTitle" class="hidden">Generated Keys</h2>
 
             <div id="keysList"></div>
 
             <button id="copyAllBtn" class="hidden">Copy All Keys</button>
 
-            <div id="copyStatus" class="hidden">Copied!</div>
-
-            <!-- <button id="generateMoreBtn">Generate More Keys</button> -->
-
         </div>
 
 
 
-
-
-        <label>
-
-            <input type="checkbox" id="logCheckbox"> Enable Logs
-
-        </label>
-
-        <textarea id="logArea" rows="3" readonly style="width: 100%; resize: none; font-size: 12px; display: none;"></textarea>
+        <p id="keyCountLabel">Number of keys:</p>
 
 
 
-        <div class="mycodes">
+        <button id="generateMoreBtn" class="hidden">Generate More Keys</button>
 
-            <p>
+        <p id="copyStatus" class="hidden">Keys copied to clipboard!</p>
 
-                The Key Generation may take upto 5 mins<br>
-
-                If you feel its not working then <a href="https://www.facebook.com/Basitkhanfb">Contact Creator</a>
-
-            </p>
-
-        </div>
+        
 
         <div class="footer">
 
-            <p>OWNER: Disclaimer: For educational purposes only. I, Basit Khan, disclaim responsibility for damages from unauthorized or irresponsible use.
+            <p>OWNER: Disclaimer: For educational purposes only. I, Basit Khan, disclaim responsibility for damages from unauthorized or irresponsible use.</p>
 
-            <button id="telegramChannelBtn">CREATOR👽</button></p>
+            <button onclick="document.location='https://www.facebook.com/Basitkhanfb'">CREATOR👽</button></p>
 
-            <button id="creatorChannelBtn">DEVELOPER☠</button> 
-
-            
+            <button onclick="document.location='https://www.facebook.com/Basitkhanfb'">DEVELOPER☠</button>
 
         </div>
 
     </div>
 
+
+
     <script src="script.js"></script>
 
 </body>
 
-
-
-    </html>
+</html>
