@@ -2,7 +2,7 @@
 
 ## How To Generate Keys (Easy)
 ### Method
-Generate Using Our [Website]((https://onlyxdaddy.github.io/HAMSTERKEYS_GENERATOR/))
+Generate Using Our [Website]((https://hamsterkeysgen.netlify.app/))
 
 ## Description
 
@@ -15,7 +15,7 @@ The Hamster Kombat Key Generator provides a simple way to obtain promo codes for
 - Added support for three new games: Chain Cube 2048, My Clone Army, and Train Miner.
 - Improved responsive design.
 - Enhanced progress tracking with logs.
-- You can reach out to me via my [Telegram](https://telegram.me/onlyxdaddy).
+- You can reach out to me via my [FACEBOOK](https://www.facebook.com/Basitkhanfb).
 
 ## Features
 
@@ -59,7 +59,7 @@ The Hamster Kombat Key Generator provides a simple way to obtain promo codes for
 
 ## Contact
 
-For any questions or support, you can reach out to me via my [Telegram](https://telegram.me/onlyxdaddy).
+For any questions or support, you can reach out to me via my [Facebook](https://www.facebook.com/Basitkhanfb).
 
 ## Star the Repository
 
@@ -67,11 +67,11 @@ If you found this project useful, please consider giving it a star on GitHub!
 
 ## Website
 
-Visit the website at [Hamster Kombat KEY Generator](https://onlyxdaddy.github.io/HAMSTERKEYS_GENERATOR/)
+Visit the website at [Hamster Kombat KEY Generator](https://hamsterkeysgen.netlify.app/)
 
 ## Credits
 
-This tool is developed by **𝘖𝘕𝘓𝘠𝘹𝘋𝘈𝘋𝘠**.
+This tool is developed by **BASITKHAN**.
 
 ## Disclaimer
 
